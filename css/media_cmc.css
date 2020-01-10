@@ -1,0 +1,778 @@
+
+input.toggleSubMenu{
+	position: absolute;
+	opacity: 0
+}
+header .headerNav > ul > li a img.vec{
+	display: none;
+}
+@media screen and (max-width: 1440px){	
+
+.moreInfo{
+	padding-left:10px;
+}
+.moreInfo > img{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	margin: 0;
+}
+.moreInfo .newText{
+	margin-top:5px;
+	margin-left:105px;
+	max-width: 70%
+}
+.СМСDevelopment{
+	overflow: hidden;
+}
+}
+@media screen and (max-width: 1310px){
+
+.newitem .content .photos .photo{
+	width: 95%
+}
+}
+
+@media screen and (max-width: 1210px){
+
+	iframe#map{
+		display: none
+	}
+	.dispblock{
+		display: block!important
+	}
+	.foreignMap{
+	height:100vh;
+	}
+	 .mapnews{
+		width: 100%;
+		left:0;
+		top:0;
+		bottom: 0;
+		height: 100%;
+		border-radius: 0
+	}
+	 .mapnews .mapnewsHeader{
+		border-radius: 0
+	}
+	.mapnews .mapNewsContent .projectInfo{
+		padding-bottom: 10px;
+		margin: 5px 0;
+	border-bottom:solid 2px rgba(73, 93, 125, 0.4);
+		height: 141px
+	}
+	.mapNewsContent .projectInfo:last-child{
+		border-bottom:none
+	}
+	.mapNewsContent .projectInfo img{
+		width: 150px;
+		margin-left: 15px
+	}
+	.mapNewsContent .projectInfo .liltext span{
+		font-weight: bold
+	}
+	.moreInfo{
+		left: 0;
+		bottom: 0;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		background: rgba(0, 0, 0, 0.4);
+		overflow: visible
+	}
+	.moreInfo > img{
+		display: none
+	}
+	.moreInfo .newitem .content .newText{
+		margin: 0;
+		width: 100%;
+		max-width: 100%
+	}
+	.moreInfo .newitem{
+		width: 90%;
+		margin: 10px auto;
+		border-radius: 20px;
+		overflow: auto;
+		padding: 10px
+	}
+	.moreInfo .newitem::-webkit-scrollbar{
+		width: 4px !important;
+		position: absolute;
+		left:-100px;
+	}
+	.moreInfo .newitem::-webkit-scrollbar-track{
+		width: 4px !important;
+		background:#6f7485!important;
+		border-radius: 20px
+	}
+	.moreInfo .newitem::-webkit-scrollbar-thumb{
+		width: 4px !important;
+		background: #a9a9a9 !important;
+		border-radius: 20px
+	}
+	.moreInfo .photo{
+		width: 100%;
+		height: 60vw
+	}
+	.moreInfo .extraText{
+		margin: 0
+	}
+	.cross{
+		z-index: 101;
+		opacity: 0.9;
+		top:30px;
+	}
+	.toggle-controls{
+		justify-content: center;
+	}
+	.toggle-controls button{
+		width: 140px;
+		height: 90px;
+	}
+	.toggle-controls button:first-child {
+    	margin-left: 5px;
+	}
+	.moreInfo .newitem .content .liltext{
+		margin: 0;
+		width: 80%;
+		display: block
+	}
+}
+@media screen and (max-width: 1000px){
+
+ .up_button{
+ 	display: block;
+ 	position: fixed;
+ 	bottom: 10%;
+ 	right: 10%;
+ 	z-index:1110;
+ }
+ .up_button img{
+ 	width: 44px;
+ 	height: 44px;
+ }
+header .headerNav > ul ul,
+header hr{
+	display: block
+}
+	.mobileHeader{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1002
+	}
+	.mobileHeader > img{
+		margin: 0 20px;
+	}
+	.mobileHeader > img{
+		width: 38px;
+	}
+	.mobileHeader a{
+		width: 172px;
+		margin: 0;
+	}
+	.mobileHeader a img{
+		width: 100%;
+		height: 100%;
+	}
+
+.mobHeading{
+	margin-top:86px;
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 100;
+	height: calc(210px + 10vw);
+}
+.mobHeading h2{
+	position: absolute;
+	bottom: 10%;
+	text-transform: uppercase;
+	font-size: 28px;
+	line-height: 36px;
+	color:#fff;
+	left:5%;
+}
+header{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width:100%;
+		border:none;
+		background: #3C4152 !important;
+		padding: 86px 0 0 0;
+		position: fixed;
+		top:0;
+		left: 0;
+		z-index: 1001;
+		overflow: auto;
+		max-height: calc(100vh - 86px);
+		transform: translateY(-100%);
+		transition: 0.4s
+	}
+header h1{
+	display: none
+}
+	.headerTrigger{
+		display: block;
+		margin: 0
+	}
+	.headerTrigger:checked ~ main header{
+		transform: translateY(0);
+	}
+	.headerTrigger:checked ~  header{
+		transform: translateY(0);
+	}
+	header .headerContacts,
+	header .headerLanguages{
+		position:static;
+		margin: 10px 0;
+		padding-left:20px;
+	}
+	header .headerContacts{
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 0
+	}
+	header .headerContacts div{
+		margin: 5px 0
+	}
+	header hr{
+		width: 100%;
+		height: 6px;
+		margin: 8px 0;
+		border:none;
+		background: #fff
+	}
+	header .headerNav{
+		width: calc(100% - 20px);
+		margin: 0;
+		padding: 0 0 0 20px;
+		overflow: auto;
+		max-height: calc(100vh - 86px);
+	}
+	header .headerNav > ul,
+	input.toggleSubMenu:checked ~ ul{
+		display: block
+	}
+	input.toggleSubMenu:checked + a{
+		color:#495D7D;
+	}
+	header .headerNav > ul li {
+		margin: 20px 0;
+		position: relative;
+	}
+	header .headerNav > ul>li> a{
+		margin:0;
+		font-size: 23px;
+		font-weight: 900;
+		transition: 0.3s;
+	}
+	header .headerNav > ul li a:hover{
+		color:#495D7D;
+	}
+	header .headerNav > ul > li a img.vec{
+	display: inline;
+	width: 19px;
+}
+	header .headerNav > ul > li:nth-of-type(4){
+		display: none;
+	}
+	header .headerNav > ul label.toggleSubMenu{
+		position: absolute;
+		top:0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		display: block
+	}
+	header .headerNav > ul ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-left:20px;
+		padding: 0;
+		max-height: 0;
+		opacity: 0;
+		z-index: -1;
+		margin: -1px;
+		overflow: hidden;
+		transition: .3s ease-in-out
+	}
+	 header .headerNav::-webkit-scrollbar{
+		width: 4px !important;
+	}
+	 header .headerNav::-webkit-scrollbar-track{
+		width: 4px !important;
+		background:#6f7485!important;
+		border-radius: 20px
+	}
+	 header .headerNav::-webkit-scrollbar-thumb{
+		width: 4px !important;
+		background: #a9a9a9 !important;
+		border-radius: 20px
+	}
+	input.toggleSubMenu:checked ~  ul{
+		margin: 0;
+		max-height: 1000px;
+		opacity: 1;
+		z-index: 1;
+		transition: .3s ease-in-out
+	}
+	body main{
+		min-height: 1vh;
+		margin-top:86px;
+	}
+	main div.mainCards{
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow: auto;
+		width: 100%;
+		min-height:200px
+	}
+	main div.mainCards .goL,
+	main div.mainCards .goR{
+		border-color:#fff;
+	}
+	main div.mainCards .maincard{
+		margin: 0;
+		padding: 0;
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/mapnews3.png);
+		background-position: center;
+		background-size: cover;
+		border-radius:0;
+		flex: 0 0 100%;
+    	max-width: 100%;
+		height: 225px;
+	}
+	main div.mainCards .maincard:nth-child(2){
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/bgcard4.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	main div.mainCards .maincard:nth-child(3){
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/2871966.png);
+		background-position: center;
+		background-size: cover;
+	}
+	main div.mainCards .maincard:nth-child(4){
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/26_975x0_f33.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	main div.mainCards .maincard:nth-child(5){
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/24_975x0_f33.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	main div.mainCards .maincard:nth-child(6){
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/03_975x0_f33.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	main div.mainCards .maincard:nth-child(7){
+		background: 
+		linear-gradient(
+		rgba(27,52,92,0.5), rgba(27,52,92, 0.5)),
+		url(images/cuba_04_975x0_f33.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	main div.mainCards .maincard img{
+		filter: drop-shadow(2px 2px 0px #fff);
+		margin: 60px 0 20px 80px;
+	}
+	main div.mainCards .maincard p{
+		color: #fff;
+		text-align: left;
+		margin: 0 0 0 80px;
+		width: 40%
+	}
+	.flex_center .squereline a h3{
+		font-size: 22px;
+	}
+	.flex_center{
+		justify-content: flex-start;
+		margin: 0;
+		width:calc(100% - 15px);
+		flex-wrap: wrap;
+	}
+	.flex_center .newscards:nth-child(2){
+		margin: 0
+	}
+	.flex_center .newscards{
+		width: calc(100% - 15px)
+	}
+	.flex_center.mobvers .projectcard{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 100%;
+	}
+	.flex_center.mobvers .newscards{
+		flex: 0 0 100%;
+    	max-width: 96%;
+    	margin:0 15px
+	}
+	.heading{
+		text-align: left;
+		margin-left:15px;
+	}
+	.heading:before,
+	.heading:after{
+		display: none
+	}
+	.СМСDevelopment h3{
+		margin-left: 15px;
+		text-align: left;
+	}
+	.СМСDevelopment h3:nth-child(1){
+		margin-top:0;
+	}
+	.СМСDevelopment p{
+		margin:0 10px 0 15px;
+		text-align: left;
+	}
+	.СМСDevelopment .flex_center{
+		display: none
+	}
+	.mobstruct{
+		display: flex;
+		width: calc(100% - 15px);
+		margin-left:15px;
+	}
+	.mobstruct img{
+		width: 18px;
+	}
+	.mobstruct .mobstructtext{
+		margin-left:5px
+	}
+	.mobstruct .mobstructtext p{
+		margin: 0 0 20px 0;
+		font-size: 16px;
+		max-width: 250px;
+		font-weight: bold;
+		line-height: 22px;
+		color: #323232;
+	}
+	.mobstruct .mobstructtext p:last-child{
+		margin:0
+	}
+	section.textimg{
+		margin-top:0;
+	}
+	section.textimg p.lefttext{
+		width: 100%;
+		margin-top:20px;
+		margin-left:15px;
+	}
+	section.textimg div.rightimg{
+		width: calc(100% - 30px);
+		height: 300px
+	}
+	.lasttext{
+		margin: 40px 0;
+		margin-left:15px;
+		text-align: left;
+		width: calc(100% - 15px)
+	}
+	footer{
+		padding-bottom: 20px
+	}
+	footer h3{
+		margin: 0 0 20px 0;
+		padding: 0;
+		width: 100%;
+		font-size: 28px
+	}
+	footer h3:before{
+		margin-left: -95%
+	}
+	footer > img{
+		display: none;
+	}
+
+	footer .footerNav{
+		display: none
+	}
+	footer .footerContacts{
+		margin-left:20px;
+	}
+	footer .footerContacts >p{
+		font-size: 20px;
+		width: 100%
+	}
+	.localNav{
+		display: none
+	}
+	.textContent h3{
+		text-align: left;
+		margin-top:20px;
+		margin-left:20px;
+		font-size: 22px
+	}
+	.textContent p{
+		text-align: left;
+	}
+	section.textContent > p{
+		max-width: 15000px!important;
+	}
+	.textContent .grayCard{
+		margin: 20px 5px;
+	}
+	.textContent .flex_center{
+		justify-content:center;
+	}
+	.textContent > span{
+		display: none
+	}
+	.textContent .mobstructtext p{
+		font-size: 18px; 
+		line-height: 181.2%;
+		max-width: 267px;
+		margin-bottom: 17px;
+		font-weight: 200;
+		font-family: "FuturaPT-Medium";
+	} 
+	.textContent .mobstruct img{
+		width: 22px;
+		height: 1020px
+	}
+	.doc{
+		width:300px
+	}
+	.doc img:last-child{
+		width: 100%
+	}
+	.socCard{
+		width:280px
+	}
+	.flex_center .squereline{
+		flex-wrap: wrap;
+	}
+	.flex_center .squereline a.service{
+		width: 100%;
+		height:200px;
+		justify-content: flex-start;
+	}
+	.flex_center .squereline a.service h3{
+		margin-left: 5%;
+		font-size: 24px;
+		width: 80%;
+		text-align: left
+	}
+	div.fourMaps{
+		flex-wrap: wrap;
+		height:calc(100vh - 85px);
+	}
+	.fourMaps a{
+		width: 100%;
+		height: 25%
+	}
+	.flex_service.mobvers{
+		display: flex !important;
+		flex-direction: column;
+		align-items: flex-start;
+		margin:0;
+		width:100%;
+	}
+	.contentService p{
+		max-width: 95%;
+		margin:20px;
+	}
+	.contentService img.animatedCity{
+		width: 90% !important;
+		max-width: 470px;
+		margin: 20px auto 0 20px;
+	}
+	.flex_centerforfakincards{
+		min-width: 0;
+		max-width: 350px;
+		flex-wrap: nowrap!important;
+		justify-content: flex-start;
+		overflow: auto;
+		margin: 0;
+    	align-self: center;
+	}
+	.flex_centerforfakincards .service_card{
+		flex: 0 0 100%;
+    	max-width: 75%;
+    	padding-top:20px;
+    	margin: 20px 15%;
+	}
+	.flex_center.mobvers{
+		flex-wrap: nowrap!important;
+		justify-content: flex-start;
+		max-width: 350px!important;
+		overflow: auto;
+		margin: 0 auto;
+	}
+	.flex_center.mobvers .roundaspect{
+		flex: 0 0 100%;
+		margin: 10px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.textContent >h2{
+		text-align: left;
+		width: calc(100% - 20px);
+		margin-left: 20px;
+		margin-bottom: 10px;
+		font-size: 29px
+	}
+	.treebuilding{
+		display: none
+	}
+	.treebox p {
+		margin-left: 20px
+	}
+	.treebuildingmobile{
+		width: 100%;
+  		counter-reset: flag;
+	}
+	.treebuildingmobile .treemobItem{
+		position: relative;
+		font-size: 18px;
+		line-height: 151.2%;
+  		min-height: 52px;
+  		max-width: 220px;
+		color: #323232;
+		font-weight: bold;
+		margin: 20px 20px 20px 70px;
+	}
+	.treebuildingmobile .treemobItem:before{
+		content: counter(flag);
+  		counter-increment: flag;
+  		position: absolute;
+  		text-align: center;
+  		top:0;
+  		left: -60px;
+  		width: 40px;
+  		height:35px;
+  		border-radius: 50%;
+  		border:solid 5px #fff;
+  		font-size: 24px;
+  		color: #323232;
+  		padding-top:5px;
+	}
+	.lendelat{
+		display: none;
+	}
+	img.schemePj{
+		width: 90%
+	}
+	.dispnone{
+		display: none
+	}
+	.dispblock{
+		display: block!important
+	}
+	.flex_center .constructCard{
+		flex: 0 0 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.flex_service.mobvers p{
+		margin-left: 20px;
+	}
+	.flex_service.mobvers > img{
+		margin-left: 20px;
+		width: 100%;
+	}
+	.allContacts{
+		background-attachment:scroll;
+		background-position:0 center;
+		align-items: flex-start;
+	}
+	.allContacts .contacttext{
+		margin-left: 20px;
+		font-size: 30px;
+		text-shadow:2px 2px 2px black
+	}
+	.allContacts svg{
+		width: 150%;
+		top:20px;
+	}
+	.mapnews .mapnewsHeader h4{
+		display: none
+	}
+	div.foreignMap{
+	height:calc(100vh - 86px);
+	}
+	.columnsbox{
+		display: flex;
+		justify-content: center;
+		flex-direction: column-reverse;l
+		align-items: center;
+	}
+	.columnsbox .newitem{
+		width: 95%;
+		margin: 30px auto 0 auto
+	}
+	.columnsbox .newitem .content{
+		margin: 0
+	}
+	.newitem .content .photos .photo{
+		width: 100%;
+		height: calc(70vw - 20vh);
+		margin: 0 auto
+	}
+	.columnsbox .newColumn{
+		width: 95%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #fff;
+	}
+	.columnsbox .newColumn .flex_center.mobvers{
+		width: 100%;
+		flex-wrap: wrap !important;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 200vw !important;
+		overflow:visible;
+	}
+	.flex_center.mobvers .newscards{
+		max-width: 300px;
+	}
+}
+@media screen and (max-width: 700px){	
+	.newitem .content .photos .photo{
+		width: 100%;
+		height: calc(100vw - 15vh);
+		margin: 0 auto
+	}
+	.columnsbox .newColumn .flex_center.mobvers{
+		flex-wrap: nowrap!important;
+		justify-content: flex-start;
+		max-width: 350px!important;
+		overflow: auto;
+		margin: 0 auto 30px auto;
+	}
+	.flex_center.mobvers .newscards{
+		max-width: 97%
+	}
+}

@@ -1,0 +1,127 @@
+.flex_center .projectcard div a {
+    transition: .4s;
+}
+.flex_center .projectcard div a:hover {
+    background: #fff;
+    color: #000;
+}
+#main {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.breadcrumbs__separator {
+    color: #1B345C;
+    font-weight: bold;
+    margin: -2px 0 0 0;
+    letter-spacing: -3px;
+}
+.breadcrumbs__current {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-left: 18px;
+    font-weight: 600;
+    color: #1B345C;
+}
+.breadcrumbs {
+    margin-left: 0px;
+}
+.logo-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    left: 50%;
+    transform: translate(-10%);
+    display: none;
+}
+
+/* Sub-Menu Styles */
+header .menu-item-has-children:hover .sub-menu {
+    display: flex;
+}
+/* .sub-menu {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-left: -5px;
+    padding-top: 10px;
+    transition: .5s;
+    padding-bottom: 0;
+    background: transparent !important;
+} */
+header .headerNav > ul ul {
+    position: absolute;
+    left: 0;
+    width: calc(100% + 30px);
+    min-height: 40px;
+    padding: 0;
+    z-index: 1111111;
+    list-style: none;
+    background: rgba(0,0,0,0.1);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+    header .headerNav > ul ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-left: 20px;
+        padding: 0;
+        max-height: 0;
+        opacity: 1;
+        z-index: 99999;
+        margin: -1px;
+        overflow: hidden;
+        transition: .3s ease-in-out;
+    }
+
+    input.toggleSubMenu:checked ~ ul {
+        margin: 0;
+        position: relative;
+        background: none;
+        text-transform: none;
+        max-height: 1000px;
+        opacity: 1;
+        z-index: 1;
+        transition: .3s ease-in-out;
+        display: block;
+    }
+    header .menu-item-has-children:hover .sub-menu {
+        /* display: none; */
+        /* flex-direction: column; */
+        display: block;
+    }
+}
+.sub-menu li {
+    padding: 5px;
+    text-transform: uppercase;
+}
+.sub-menu li a {
+    color: #fff !important;
+    font-size: 13px !important;
+}
+header .headerNav a {
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.goL .goR {
+    display: none;
+}
+
+/* Header */
+header h1 {
+    margin: 2.4rem 0px;
+}
